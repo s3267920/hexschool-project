@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 以上為css reset */
+
+/* 選單切換跟logo */
+
+#header{
+	position: relative;
+	padding-top: 10px;
+	background-color: #fff;
+}
+#header a{
+	text-decoration: none;
+	}
+html{
+	font-family: Microsoft JhengHei, Arial, Helvetica, sans-serif;
+}
+body{	
+	max-width:1000px;
+	margin: 0 auto;
+	}
+.navbar{
+	background-color: rgb(245,244,245);
+	max-width: 1000px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.navbar li{
+	display: inline;
+	float: right;
+	padding-right: 15px;
+	height: 22px;
+	line-height: 22px;
+}
+.navbar li img{
+	display: inline-block;
+	margin-right: 5px;
+	margin-top:3px; 
+	vertical-align:text-top;
+}
+.logo{
+	padding-top: 10px;
+	float: left;
+}
+.menu,.menu a{
+	height: 54px;
+	line-height: 54px;
+	color:#00cc99;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.menu li{
+	display: inline-block;
+	float: right;
+	background-color: #fff;
+	padding-left: 30px;
+}
+.menu li :hover{
+	padding-bottom: 10px;
+	border-bottom:4px solid #00cc99;
+}
+.menu li a:active{
+	border-bottom:4px solid skyblue;
+	color:skyblue;
+}
+
+/* banner */
+.banner{
+	background-image: url(img/banner2.png);
+	max-width: 1002px;
+	height: 346px;
+	position: relative;
+}
+.box{
+	width: 1000px;
+	height: 160px;
+	background-color: rgb(0,0,0,25%);
+	position: absolute;
+	top: 25%;
+}
+h1{
+	position: absolute;
+	top:25%;
+	padding-left: 20px;
+	color:#fff;
+	font-size: 36px;
+}
+
+/* 三個卡片 */
+.content{
+	display: table;
+	margin: 0 auto;
+	padding-top: 50px;
+
+}
+.content p{
+	font-family: Microsoft JhengHei,Geneva, Tahoma, sans-serif;
+	text-align: justify;
+	font-size: 15px;
+}
+.center-title{
+	font-weight: bold;
+	padding-left: 25%;
+	font-size: 18px;
+}
+.content li{
+	width:260px;
+	float: left;
+}
+.content-list  {
+	margin: 15px;
+	padding: 15px;
+	border-top-style: none;
+	text-align: center;
+	line-height: 150%;
+	border-radius: 0px 0px 5px 5px;
+	box-shadow: 0px 3px 5px lightgray;
+}
+.jquery-list {
+	padding-left: 15%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* 清除樣式 */
+.clearfix{
+	clear: both;
+}
+
+/* 比較表格 */
+.compare h2{
+	font-size: 24px;
+	margin:0px auto;
+	padding-top: 40px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+table{
+	margin: 0 auto;
+	width: 840px;
+	font-size: 15px;
+}
+.compare-table th,td{
+	border-bottom: 1px solid lightgray;
+	padding: 10px 20px;
+	background-color: rgb(240, 240, 240);
+	font-weight: bold;
+	text-align:justify;
+}
+.compare-table td{
+	background-color: #fff;
+	font-weight:normal;
+}
+.for-color{
+	color:#00cc99;
+}
+/* 漸層表單 */
+.box2{
+	margin-top: 60px;
+	max-width: 1000px;
+	padding-bottom: 30px;
+	background: linear-gradient(#00644b,#009872);
+}
+.form-content h2{
+	padding:30px 0;
+	text-align: center;
+	color:#fff;
+	line-height: 150%;
+	font-size: 24px;
+}
+form{
+	position: relative;
+}
+textarea{
+	width: 460px;
+	height: 245px;
+	margin-left: 20px;
+	border-radius: 5px;
+	border: none;
+}
+input{
+	font-size: 15px;
+	padding:5px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	border: none;
+}
+input:focus{
+	background-color: #d2d2d2;
+}
+#name, #email, #phone{
+	width: 460px;
+}
+.left-form{
+	position: absolute;
+	right:20px;
+	line-height: 150%;
+	top:0;
+	color: #fff;
+}
+.submit{
+	padding: 6px 20px;
+	color:#fff;
+	background-color: #00cc99;
+	position: absolute;
+	right: 0;
+	margin-top: 15px;
+	font-size: 15px;
+
+}
+.submit:active{
+	background-color: #09d7a3;
+	border:1px solid #00cc99
+}
+
+/* 底端資訊 */
+.footer{
+	position: relative;
+	padding:0 20px;
+	margin: 30px 0;
+	margin-bottom: 30px;
+	height: 80px;
+	background-color: #fff;
+}
+.footer p{
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 150%;
+}
+.footer span{
+	color: #e12d80
+}
