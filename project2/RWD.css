@@ -1,0 +1,325 @@
+@media screen and (max-width: 1020px){
+/* 首頁RWD*/
+body{
+    margin: 0 auto;
+}
+.content ul{
+    margin:10px 0%; 
+}
+
+/* 問答RWD*/
+
+.qaf-text-box .qaf-box{
+    margin-left:20%; 
+    width: 700px;
+    height: 52px;
+}
+}
+
+@media screen and (max-width: 940px){
+/* 首頁RWD*/
+.text{
+    max-width: 460px;
+    padding-right: 100px;
+}
+
+/* 課程RWD*/
+.course-banner ul{
+    right: 0px;
+    top:20%;
+}
+.content-order ol{
+    margin:25px 10% 10px 70px;
+}
+
+/* 問答RWD*/
+.qaf-text-box .qaf-box{
+    top: 56%;
+    margin-left:20%; 
+    width: 630px;
+}
+.qaf-search-box{
+    width: 460px;
+    padding: 14.5px 1%; 
+
+}
+.qaf-search-btn{
+    padding: 11px 10px 11px 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 800px){
+/* 首頁RWD*/
+.content ul{
+    margin:10px 8%; 
+}
+.content-btn{
+    margin-top: 5px;
+    font-size: 18px;
+    margin-right: 6%;
+}
+.text{
+    max-width: 460px;
+    padding-right: 60px;
+    font-size: 18px;
+    }
+.form-right ul{
+    position: absolute;
+    right: 15px;
+}
+
+/* 課程RWD*/
+.course-banner img{
+    max-width: 60px;
+}
+.course-banner .banner-btn {
+    margin-left: 35%;
+}
+.course-content-teacher,.outline-title,.content-order{
+    margin-left: 10%;
+}
+.ask-form.form-text{
+    height: 400px;
+}
+.form-text p{
+    margin: 15% 0 0 10%;
+}
+.form-text-btn{
+    top: 40%;
+    right: -10%;
+}
+
+/* 問答RWD*/
+.qaf-text-box .qaf-box{
+    top: 56%;
+    margin-left:15%; 
+    width: 630px;
+}
+
+.qaf-content .ask-title{
+    margin-left:14%;
+
+}
+
+
+
+
+
+}   
+
+@media screen and (max-width: 740px){
+
+/* 首頁RWD     */
+.content ul{
+    margin:10px 8%; 
+}
+.content li{
+    display: inline;
+    float: left;
+    padding: 25px 10px 20px 10px;
+    margin:20px 10px;
+}
+.content-btn{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.ask-form{
+    height: 500px;
+    position: relative;
+}
+.form-right{
+    position: absolute;
+    top:40%;
+    left: 58%;
+    margin: 10px 14% 0 20%;
+}
+.ask-form-title{
+    margin: 10% 15% 0 15%;
+    font-size: 30px;
+    line-height: 200%;
+    letter-spacing:0.8px;
+}
+
+/* 課程RWD*/
+.course-banner ul{
+    right: -3%;
+}
+.course-banner li{
+    margin-right:10px ;
+}
+.course-banner img{
+    max-width: 45px;
+}
+.course-banner .banner-btn { 
+    top: 60%;
+    margin-left: 35%;
+}
+.course-content-teacher,.outline-title,.content-order{
+    margin-left: 3%;
+}
+.ask-form.form-text{
+    height: 400px;
+}
+.form-text p{
+    margin: 15% 0 0 10%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 200%;
+}
+.form-text-btn{
+    position: relative;
+    top: 40%;
+    right: -5%;
+}
+
+/* 問答RWD*/
+.qaf-text-box .qaf-box{
+    top: 56%;
+    margin-left:15%; 
+    width: 550px;
+}
+.qaf-content .ask-title{
+    margin-left:14%;
+}
+.qaf-ask-form{
+    height: 700px;
+}
+.qaf-ask-form p{
+    margin-left:30%; 
+    margin-top: 12% ;
+    
+}
+.ask-form-right{
+    margin-top: -5% ;
+}
+
+}
+
+@media screen and (max-width: 700px){
+/* 課程RWD*/
+.course-content-teacher,.outline-title,.content-order{
+    margin-left: 0%;
+}
+.content-order ol{
+    margin:25px 10% 10px 70px;
+}
+.ask-form.form-text{
+    height: 400px;
+}
+.form-text p{
+    margin: 15% 0 0 10%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 200%;
+}
+.form-text-btn{
+    position: relative;
+    top: 40%;
+    right: -5%;
+}
+/* 問答RWD*/
+.qaf-text-box .qaf-box{
+    top: 56%;
+    margin-left:12%; 
+    width: 550px;
+}
+
+.qaf-content .ask-title{
+    margin-left:14%;
+} 
+.qaf-ask-form{
+    height: 700px;
+}
+.qaf-ask-form p{
+    margin-left:30%; 
+    margin-top: 12% ;
+    
+}
+.ask-form-right{
+    margin-top: -5% ;
+    margin-left: 22%;
+}
+
+
+
+}
+
+@media screen and (max-width: 650px){
+/* 首頁RWD*/
+body{
+    min-width: 640px;
+}
+.content ul{
+    margin:10px 25%; 
+}
+.content-btn{
+    margin-top: 5px;
+    font-size: 20px;
+}
+.ask-form{
+    height: 420px;
+    position: relative;
+}
+.ask-form p{
+    margin: 10% 0 0 10%; 
+}
+.form-right{
+    position: absolute;
+    top:42%;
+    left: 58%;
+    margin: 10px 14% 0 20%;
+}
+.ask-form-title{
+    margin: 10% 10% 0 10%;
+} 
+
+/* 課程RWD*/
+.course-banner ul{
+    display: none;
+}
+.form-text p{
+    margin: 15% 0 0 10%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 200%;
+}
+.form-text-btn{
+    position: relative;
+    top: 60%;
+    right: 0%;
+}
+
+
+/* 問答RWD*/
+.qaf-banner p{
+    margin-left:30%; 
+}
+.qaf-text-box .qaf-box{
+    top: 56%;
+    margin-left:9%; 
+    width: 560px;
+}
+.qaf-search-box{
+    width: 460px;
+    padding: 14.5px 1%; 
+
+}
+.qaf-search-btn{
+    padding: 11px 10px 11px 20px;
+
+}
+.qaf-ask-form{
+    height: 700px;
+}
+.qaf-ask-form p{
+    margin-left:25%; 
+    margin-top: 12% ;
+    
+}
+.ask-form-right{
+    margin-top: -10% ;
+    margin-left: 22%;
+}
+}
