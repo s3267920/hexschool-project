@@ -50,8 +50,8 @@ table {
 
 
 body{
-max-width:1025px;
-margin: 0 auto;
+    max-width:1025px;
+    margin: 0 auto;
 
 }
 
@@ -66,7 +66,7 @@ header
 }
 .menu{
     position: absolute;
-    background-color: rgb(255, 255, 255,10%);
+    background-color: rgba(255, 255, 255, 0.1);
     width:100%;
 }
 .logo{
@@ -79,7 +79,7 @@ header
 }
 .logo h1 a{
     display: inline-block;
-    background-image: url(/images/hex-logo.png);
+    background-image: url(images/hex-logo.png);
     width: 170px;
     height: 36px;
     text-indent: 101%;
@@ -117,7 +117,7 @@ header
     border-bottom: 7px solid #00cc99;
 }
 .banner{
-    background-image: url(/images/home-banner.png);
+    background-image: url(images/home-banner.png);
     height:560px;
     background-size: cover;
     background-position: center;
@@ -209,13 +209,13 @@ content
     margin:10px 5%; 
 }
 .content li{
-display: inline;
-float: left;
-padding: 25px 10px 20px 10px;
-margin:20px 10px;
-text-align: center;
-width: 260px;
-box-shadow: 0px 2px 7px rgb(150, 150, 150);
+    display: inline;
+    float: left;
+    padding: 25px 10px 20px 10px;
+    margin:20px 10px;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0px 2px 7px rgb(150, 150, 150);
 }
 .content .content-item-title{
     font-size: 20px;
@@ -240,10 +240,10 @@ compare table
 .table-style td,.table-style th{
     padding: 16px 65px;
     text-align: center;
-    border-top: 1px solid rgb(200,200,200,40%)
+    border-top: 1px solid rgb(234,234,234);
 }
 .table-style th{
-    background-color: rgb(200,200,200,40%)
+    background-color: rgb(234,234,234);
 }
 .c-color{
     color: #00cc99;
@@ -350,7 +350,7 @@ header
  */
 
 .course-banner{
-    background-image: url(/images/course-banner.png);
+    background-image: url(images/course-banner.png);
     height:560px;
     background-size: cover;
     background-position: center;
@@ -434,9 +434,9 @@ content
     font-weight: 400;
 }
 .course-content-teacher li{
-color: rgb(150, 150, 150);
-font-weight: 300;
-line-height: 150%;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+    line-height: 150%;
 }
 
 /* 課程特別部份 */
@@ -482,7 +482,7 @@ line-height: 150%;
     letter-spacing: 1px;
 }
 .outline li.outline-color{
-    background-color: rgb(200,200,200,40%) ;
+    background-color: rgba(200,200,200,0.4) ;
     height: 30px;
     color: #000;
     font-weight: 500;
@@ -522,7 +522,7 @@ header
 
 
 .qaf-banner{
-    background-image: url(/images/qaf-banner.png);
+    background-image: url(images/qaf-banner.png);
 }
 .qaf-banner p{
     color: #fff;
@@ -544,7 +544,8 @@ header
     width: 700px;
     height: 52px;
 }
-.qaf-search-box{
+input[type="search"]{
+    -webkit-appearance: none;
     float: left;
     width: 525px;
     height: 52.2px;
@@ -559,6 +560,7 @@ header
     color: #000;
 }
 .qaf-search-btn{
+    margin: 0; 
     padding: 11px 15px 11px 27px;
     height: 52.2px;
     border-radius: 0 5px 5px 0;
