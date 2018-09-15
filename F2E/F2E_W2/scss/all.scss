@@ -1,0 +1,374 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上為CSSreset */
+
+
+
+
+//樣式設定
+@import "_style.scss";
+
+
+
+
+/*search頁*/
+
+body{
+	max-width:1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+#header{
+	background-color: #000;
+	height: 92px;
+	.logo{
+		float: left;
+		h1{
+			display: inline-block;
+			background-image: url(images/logo.svg);
+			background-repeat: no-repeat;
+			height: 44px;
+			margin: 24px 150px 24px 78px;
+		a{
+			display: inline-block;
+			width: 275px;
+			height: 44px;
+			text-indent: 101%;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		}
+	}
+	.search{
+		position: relative;
+		float: left;
+		max-width: 350px;
+		padding: 5px;
+		border-bottom:2px solid #fff ;
+		img{
+			position: absolute;
+			top: 30px;
+			left: 0;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+		}
+		.search-input{
+			width: 350px;
+			padding: 5px 30px 5px 20px;
+			margin-top: 20px;
+			margin-left:20px; 
+			font-size: 20px;
+			font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			border: none;
+			color: #fff;
+			background-color: #000;
+		}
+	}
+
+}
+.clearfix{
+    clear: both;
+}
+.left-content{
+    float: left;
+    background-color: #ebebeb;
+	margin-left:40px; 
+	li{
+		width: 300px;
+		margin-bottom: 1px;
+		border-top: 2px solid #d7d7d7; 
+		h3{
+			margin: 25px 0 15px 0px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.location,.date,.categories{
+			margin-left:40px; 
+			margin-bottom: 25px;
+		}
+		.location select{
+			margin-right: 40px;
+			width:220px;
+			height: 40px;
+			border: none;
+			font-size: 16px;
+		}
+		.date{ 
+			input{
+			height: 40px;
+			width: 158px;
+			font-size: 16px;
+			margin: 8px 40px 0 10px;
+			padding-left: 10px;
+			border: none;
+			
+			}
+			.end{
+				margin-left: 20px;
+			}
+		}
+		.categories{
+			input{
+				border: none;
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+
+/* 右邊的內容 */
+
+
+.data{
+    float: left;
+	margin-right: 300px;
+	p{
+		font-size: 24px;
+		margin: 25px 0 0 40px;
+		
+	}
+	.data-number{
+		color: $skyblue;
+		font-weight: bold;
+	}
+	.tag{
+		ul{
+			margin: 20px 0px 0 40px;
+			li{
+				float: left;
+				border: $skyblue 1px solid;
+				color: $skyblue;
+				border-radius: 50px;
+				padding: 8px 15px;
+				margin-right:10px; 
+				.del{
+					width: 15px;
+					margin-left: 8px;
+					vertical-align: middle;
+					cursor: pointer;
+				}
+			}
+			li:hover{
+				background-color: #000;
+				color: #fff;
+			}
+			
+		}
+	}
+}
+
+
+/* 內容 */
+
+
+.context{
+	ul{
+		float: left;
+		margin: 0px 0px 30px 40px;
+		li{
+			display: inline-block;
+			height: 220px;
+			margin-top: 4%;
+			padding-right:0px; 
+			background-color: #fff;
+			.photo{
+				height: 220px;
+				float: left;
+				margin-right: 20px;
+			}
+			h4{
+				font-size: 24px;
+				color: $skyblue;
+				padding: 25px 0 20px 20px ;
+			}
+			p{
+				padding: 2%;
+				padding-bottom: 0px;
+			}
+			.context-label{
+				.context-location{
+					font-weight: bold;
+					float: left;
+					margin-top: 15px;
+					margin-right: 10px;
+					padding: 3px 0;
+				}
+				.context-tag{
+					display: inline-block;
+					background-color: rgb(160, 160, 160);
+					color: #fff;
+					border-radius: 50px;
+					padding: 3px 15px;
+					margin-top: 15px;
+					font-size: 16px;
+					font-weight: 300; 
+				}
+			}
+			.time {
+				padding-left: 10px;
+				padding-top: 3px;
+				color: #9B9B9B ;
+				.map-pin,.calendar{
+					height: 15px;
+					margin-top: 15px;
+				}
+				.city,.time-date{
+					display: inline;
+					padding-left: 10px;
+					padding-top: 3px;
+					color: #9B9B9B ;
+				}
+				.time-date{
+					padding-left:10px;
+				}
+			}	
+		}
+		li:hover{
+			box-shadow: 2px 1px 10px rgba(154, 153, 153,0.5) ;
+		}
+	}
+}
+
+
+/*換頁*/
+
+
+.page-change{
+	ul{
+		float: right;
+		margin-right: 40px;
+		margin-bottom: 30px;
+		li{
+			float: left;
+			border: none;
+			line-height: 40px;
+			text-align: center;
+			background-color: #fff;
+			width: 40px;
+			height: 40px;
+			margin-left: 1px;
+			a{
+				display: inline-block;
+				text-decoration: none;
+				width: 40px;
+				height: 40px;
+				color: $skyblue;
+			}
+			a:hover{
+				background-color: $skyblue;
+				color: #fff;   
+			}
+		}
+	}
+}
+
+#footer{
+    height: 60px;
+    background-color: #000;
+}
+
+
+
+
+/* content頁 */
+
+
+.content{
+	.context-title{
+		p{
+			display: inline-block;
+			width: 670px;
+			margin: 40px 40px 0px 40px;
+			background-color: #EBEBEB;
+			padding: 15px;
+			color: #9B9B9B;
+			.explore{
+				color: $skyblue;
+			}
+		}
+	}
+	.content-text{
+		float: left;
+		width: 700px;
+		background-color: #fff;
+		margin: 20px 40px;
+		.content-photo{
+			width: 700px;
+			height: 400px;
+			float: none;
+			margin-bottom: 25px;
+			margin-right: 0px;
+		}
+		h4{
+			margin:25px 70px;
+			font-size: 36px;
+			color: $skyblue;
+		}
+		.article-tag{
+			margin: 0px 70px;
+			.content-context-tag{
+				margin: 0px 20px;;
+			}
+		}
+		.content-time{
+			margin: 20px 70px 25px 70px;
+			img{
+				margin-top: 0px;
+			}
+			.content-city{
+				padding-left: 5px;
+			}
+			.calendar-content{
+				margin-left: 20px;
+			}
+		}
+	}
+	.article{
+		margin:25px 70px;
+		line-height: 150%;
+	}
+}

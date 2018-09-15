@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="scss/all.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="RWD.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>  
+    <script src="./js/datepicker-zh-TW.js "></script> 
+    <script src="./js/main.js"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <h1><a href="index.html">HOLIDAY</a></h1>
+        </div>
+        <div class="search">
+            <img src="images/search_white1.png">
+            <input type="search" class="search-input" name="search" placeholder="Explore your own activities">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <div class="left-content">
+            <ul>
+                <li>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <select>
+                            <option value="台北">台北</option>
+                            <option value="新北">新北</option>
+                            <option value="桃園">桃園</option>
+                            <option value="台中">台中</option>
+                            <option value="台南">台南</option>
+                            <option value="高雄">高雄</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="date">
+                        <h3>Date</h3>
+                        <label class="start" for="from">from</label>
+                        <input id="from" class="datepicker" type="text" name="from" ><br>
+                        <label class="end" for="to">to</label>
+                        <input id="to" value="" class="datepicker"  type="text" value="" name="to" >
+                    </div>
+                </li>
+                <li>
+                    <div class="categories">
+                            <h3>Categories</h3>
+                            <input type="checkbox" id="checkAll" name="checkbox-item" value="All">All<br>
+                            <input type="checkbox" name="checkbox-item" class="check" value="Entertainment">Entertainment<br>
+                            <input type="checkbox" name="checkbox-item" class="check" value="Food">Food<br>
+                            <input type="checkbox" name="checkbox-item" class="check" value="Learning">Learning<br>
+                            <input type="checkbox" name="checkbox-item" class="check" value="Outdoors">Outdoors
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="data">
+            <p>Showing <span class="data-number">15</span> results by...</p>
+            <div class="tag">
+                <ul>
+                    <li>台北<img class="del" src="./images/times-circle_blue.png" alt="X" ></li>
+                    <li>Entertainment<img class="del"  src="./images/times-circle_blue.png" alt="X"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="context">
+            <ul>
+                <li>
+                    <img class="photo" src="images/taipei.jpeg" alt="Taipei101">
+                        <h4 class="name">Lorem ipsum dolor sit amet.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus animi quos in.</p>
+                        <div class="context-label">
+                                <p class="context-location">地名</p>
+                                <p class="context-tag">Entertainment</p>
+                        </div>
+                        <div class="time">
+                            <img class="map-pin" src="images/map-marker-alt.svg" alt="地標">
+                            <p class="city">Taipei City</p>
+                            <img class="calendar" src="images/calendar-alt.svg" alt="地標">
+                            <p class="time-date"></p>
+                        </div>
+                </li>
+                <li>
+                    <img class="photo" src="images/taipei.jpeg" alt="Taipei101">
+                        <h4 class="name">Lorem ipsum dolor sit amet conetur.</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus atque odit laudantium.</p>
+                        <div class="context-label">
+                            <p class="context-location">地名</p>
+                            <p class="context-tag">Entertainment</p>  
+                        </div>
+                        <div class="time">
+                            <img class="map-pin" src="images/map-marker-alt.svg" alt="地標">
+                            <p class="city">台北市</p>
+                            <img class="calendar" src="images/calendar-alt.svg" alt="地標">
+                            <p class="time-date"></p>
+                        </div>
+                        
+                </li>
+                <li>
+                    <img class="photo" src="images/taipei.jpeg" alt="Taipei101">
+                        <h4 class="name">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur modi eum quisquam rem!</p>
+                        <div class="context-label">
+                            <p class="context-location">地名</p>
+                            <p class="context-tag">Entertainment</p>
+                            <div class="time">
+                        </div>
+                        
+                        <div class="time">
+                            <img class="map-pin" src="images/map-marker-alt.svg" alt="地標">
+                            <p class="city">Taipei</p>
+                            <img class="calendar" src="images/calendar-alt.svg" alt="地標">
+                            <p class="time-date">Taipei</p>
+                        </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="page-change">
+            <ul>
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="footer"></div> 
+
+</body>
+</html>
